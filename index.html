@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Menu Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Hotel Delight</h1>
+        <p>Your comfort, our priority</p>
+    </header>
+    <main>
+        <img src="Images.jpg" width="900px" height="600px">
+    </main>
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-item">
+            <h3>Cheese Pizza</h3>
+            <p>Cheese Pizza With a crispy crust</p>
+            <span>299/-</span>
+        </div>
+        <div class="menu-item">
+            <h3>Chicken Pizza</h3>
+            <p>Juicy Chicken Pizza With a Crispy Crust</p>
+            <span>350/-</span>
+        </div>
+        <div class="menu-item">
+            <h3>Alfredo pasta</h3>
+            <p>Creamy Alfredo Pasta with Garlic Bread</p>
+            <span>280/-</span>
+        </div>
+        <!-- Add more menu items as needed -->
+    </section>
+    <section id="order-form">
+        <h2>Place Your Order</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required><br><br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br><br>
+            <label for="address">Address:</label>
+            <input type="text" id="address" required><br><br>
+            <label for="order">Order:</label>
+            <select id="order">
+                <option value="Cheese Pizza">Cheese Pizza (299/-)</option>
+                <option value="Chicken Pizza">Chicken Pizza (350/-)</option>
+                <option value="Alfredo pasta">Alfredo pasta (280/-)</option>
+                <!-- Add more menu options as needed -->
+            </select><br><br>
+            <button onclick="orderAlert()">Order Now</button>
+        </form>
+    </section>
+    <script>
+        function orderAlert() {
+            alert("Thank you for your order! We will prepare it shortly.");
+        }
+    </script>
+</body>
+</html>
